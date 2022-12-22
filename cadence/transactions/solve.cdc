@@ -1,8 +1,8 @@
 import BadBot
 
-transaction() {
+transaction(solution: String, ID: Int) {
     prepare(signer: AuthAccount) {
-        BadBot.solve(solver: signer, ID: "1", solution: "74657374")
+        BadBot.solve(solver: signer, ID: ID, solution: solution)
     }
     execute {}
 }
